@@ -26,6 +26,10 @@ function TodoApp(props) {
             }
         }
     }
+    //할 일 변경 함수
+    function updateTodo(todo){
+        
+    }
     //화면변경함수
     function changePage( modeName ){
         setMode(modeName)
