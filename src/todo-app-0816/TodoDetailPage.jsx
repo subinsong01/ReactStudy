@@ -7,6 +7,14 @@ function TodoDetailPage(props) {
     const [content, setContent ] = useState(props.todoObj.content)
     function handleSubmit(e){ 
         e.preventDefault()
+        let todoObj = {
+            no : no,
+            title:title,
+            done:done,
+            content:content
+        }
+        props.onTodoUpdate( todoObj )
+        props.onChangePage("main")
     }
     return (
         <div>
